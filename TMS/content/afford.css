@@ -1,0 +1,181 @@
+/******************************************************************
+GENERAL LAYOUT
+******************************************************************/
+html{}
+body{background-color:#fff; font-family:Arial,Helvetica; font-size:16px; position:relative; min-width:940px;}
+body.inner{}
+a,a:visited{color:#005187;}
+a:hover{color:#1072b3; text-decoration:underline;}
+img{border:none;}
+em{font-style:italic;}
+ol{list-style-type: decimal;padding: 10px 0 10px 20px;}
+ol li{padding-bottom: 10px;}
+
+h1,h2,h3{color:#333; font-weight:bold;}
+p{color:#6d6d6f; font-size:14px;}
+
+#content{position:relative; clear:both; margin-top:40px;}
+html.ie6 #content{margin-top:30px; margin-bottom:30px;}
+
+.wrap-align{width:940px; margin:0 auto; position:relative;}
+
+/******************************************************************
+HEADER STYLES
+******************************************************************/
+#top-bar{width:100%; position:relative;}
+html.ie7 #top-bar{z-index:1000;}
+#blue-bar{width:100%; height:40px; background-color:#001c40;}
+#admin-login-button{position:absolute; right:0; top:4px; width:150px; height:28px; background-color:#e0e9ef; border:solid 2px #bfced8; border-left:solid 1px #2e4d6c; }
+#admin-login-button a{font-family:Myriad Pro; font-size:12px; color:#62839c; text-align:center; line-height:28px; text-decoration:none;}
+header[role=banner]{}
+#logo-top{margin-top:10px; margin-bottom:25px; display:block;}
+
+html.ie6 #top-bar{display:block; z-index:2;}
+
+/******************************************************************
+MAIN NAVIGATION
+******************************************************************/
+nav[role=navigation]{width:100%; height:48px; background-color:#f7f7f3; border-top:solid 1px #e5e4d9; border-bottom:solid 1px #e5e4d9;}
+.menu{float:left; display:inline;}
+.menu ul{float:left; display:inline; overflow:hidden;}
+.menu ul li{float:left; display:inline; font-size:16px; height:48px; line-height:48px; margin-left:35px; font-family:Myriad Pro, Arial;}
+.menu ul li.first{margin-left:0px;}
+.menu ul li a,.menu ul li a:visited{color:#991b1e; padding:0 5px; height:100%; display:block; text-decoration:none;}
+.menu ul li a.active,.menu ul li a.active:visited{color:#fff; background-color:#96b2be; border:solid 1px #6a8aa3; border-bottom:none; padding:0 4px; height:47px;}
+.menu ul li a.main:hover,.menu ul li a.main:visited:hover{color:#fff; background-color:#687b83; border:solid 1px #6a8aa3; border-bottom:none; padding:0 4px; height:47px;}
+.menu ul.sub-menu{background-color:#96b2be; border:solid 1px #6a8aa3; border-top:none; position:relative;  z-index:999; }
+.menu ul.sub-menu{width:200px !important;}
+.menu ul.sub1{width:200px !important;}
+.menu ul.sub-menu li{margin-left:0px; height:40px; line-height:40px; font-size:16px;}
+.menu ul.sub-menu li a,.menu ul.sub-menu li a:visited{color:#fff; font-family:Myriad Pro, Arial; font-size:16px; padding:0 5px; width:190px;}
+.menu ul.sub-menu li a:hover{background-color:#687b83;}
+.menu ul.sub-menu li.phonehelp{background-color:#cddae0; height:85px; text-align:center; color:#444; padding-top:5px; width:100%; line-height:21px;}
+
+.secondary-menu{overflow:hidden;}
+.secondary-menu ul{float:right; display:inline; }
+.secondary-menu ul li{float:left; display:inline; font-size:12px; height:48px; line-height:48px; margin-left:30px; font-family:Gill Sans MT, Myriad Pro, Arial;}
+.secondary-menu ul li a,.secondary-menu ul li a:visited{color:#62839c; padding:0px 3px; height:100%; display:block; text-decoration:none;}
+.secondary-menu ul li.about{margin-left:0;}
+.secondary-menu ul li.student-family{height:28px; width:122px; background-color:#e9e8df; border:solid 1px #b6b5a7; margin-top:9px;}
+.secondary-menu ul li.student-family a,.secondary-menu ul li.student-family:visited{color:#75735b; text-align:center; line-height:28px;}
+
+
+html.ie7 nav[role=navigation]{min-width:100%;}
+html.ie6 nav[role=navigation]{width:100%;}
+html.ie6 .menu ul.sub-menu,html.ie7 .menu ul.sub-menu{display:block; position:absolute;}
+html.ie6 .menu ul li{width:170px;}
+html.ie6 .menu ul li.first{margin-left:0px; width:168px;}
+html.ie6 .menu ul li.second{width:123px}
+html.ie6 .menu ul li.third{width:136px;}
+html.ie6 .secondary-menu ul li.about{width:70px;}
+html.ie6 .secondary-menu ul li.contact{width:70px;}
+
+/******************************************************************
+HOMEPAGE
+******************************************************************/
+#homepage{}
+#home-upper{width:100%; height:361px; background-color:#eff8fb; border-top:solid 1px #bfc7d0; border-bottom:solid 1px #58e0ff; overflow:visible;}
+#home-main-image{float:left; display:inline; margin-top:-22px; margin-left:-160px;}
+#home-upper .right{width:455px;}
+#home-upper .right h1{color:#38454d; font-family:Arial; font-weight:bold; font-size:36px; margin:25px 0px;}
+#home-upper .right p{color:#435b75; font-family:Arial; font-size:14px;}
+#home-upper .right .action{margin-top:20px; margin-left:15px; overflow:hidden;}
+#home-upper .right .action #get-started{float:left; display:inline; width:226px; height:53px; background:url("images/btn-get-started.png") no-repeat;}
+#home-upper .right .action span{float:left; display:inline; margin:0px 10px; font-family:Arial; font-size:18px; font-weight:bold; line-height:53px;}
+#home-upper .right .action a.see-how{float:left; display:inline; color:#005187; font-family:Arial; font-size:17px; font-weight:bold; line-height:53px;}
+#home-lower{width:100%; height:205px; margin-top:45px; padding-top:30px; background-color:#f3f7fa; border-top:solid 1px #539efc; overflow:hidden;}
+#home-lower .cell{float:left; display:inline; width:190px; height:205px; margin-left:50px;}
+#home-lower .cell p{color:#909194; line-height:21px; font-size:13px;}
+#home-lower .cell h3{color:#62839c; font-size:16px; font-family:Arial; font-weight:bold; height:70px; padding-left:60px;}
+#home-lower .one{margin-left:0px; width:215px; margin-top:15px; height:190px;}
+#home-lower .one h2{font-size:27px; color:#440304; font-family:Palatino Linotype, Book Antiqua, Palatino; font-style:italic; font-weight:bold; margin-bottom:20px;}
+#home-lower .one p{color:#6e6f71;}
+#home-lower .two{margin-left:25px;}
+#home-lower .two h3{background:url("images/bulb-icon.png") no-repeat 5px 0px;}
+#home-lower .three h3{background:url("images/hat-icon.png") no-repeat 0px 0px; padding-left:82px;}
+#home-lower .four h3{background:url("images/computer-icon.png") no-repeat 0px 0px; padding-left:70px;}
+
+/******************************************************************
+INTERIOR
+******************************************************************/
+#page{overflow:hidden; margin-top:40px; margin-bottom:30px;}
+#page-nav{width:220px; float:right; display:inline; border-top:solid 2px #7aa8c9; border-bottom:solid 2px #7ba7ca; padding-top:15px; padding-bottom:5px;}
+#page-nav h4{font-family:Myriad Pro, Tahoma; font-size:17px; font-weight:normal; color:#006d9f; padding-bottom:15px; border-bottom:solid 1px #9dbdd6;}
+#page-nav ul{overflow:hidden;}
+#page-nav ul li{margin:7px 0; font-size:17px; color:#727274; padding-left:7px; font-family:Myriad Pro, Tahoma;}
+#page-nav.school-refunds ul li{font-size:14px;}
+#page-nav ul li a{color:#727274; text-decoration:none;}
+#page-nav ul li a:hover{text-decoration:underline;}
+#page-content{width:695px; float:left; display:inline;}
+#page-content h1{ font-size:33px; font-weight:bold; color:#36454a; margin-bottom:30px; font-family:Arial;}
+#page-content h2{font-size:18px; font-weight:bold; color:#354f6a; margin:5px 0px; font-family:Arial;}
+#page-content p,#page-content address{font-size:14px; line-height:19px; color:#6e7b81; margin:15px 0px;}
+#page-content p a{color:#0385d0; text-decoration:underline;}
+#page-content p strong{color:#262f36;}
+.educatecard #page-content p strong{color:#6e7b81;}
+#page-nav #get-started-small { width: 210px; height: 49px; margin: 0 auto 5px; background: url("images/btn-get-started-sm.png") no-repeat; }
+#get-started-small { width: 210px; height: 49px; margin: 0 0 5px; background: url("images/btn-get-started-sm.png") no-repeat; }
+.school-refunds{font-weight:bold;}
+.school-refunds li a{font-family:Arial; font-size:14px; letter-spacing:-1px;}
+/******CONTACT***************/
+#page .contact h2{border-bottom:solid 1px #c0c0c0; margin:15px 0; padding-bottom:5px;}
+#page .contact span.col{width:250px; float:left;}
+/******FAQ***************/
+#page .faq h2{border-bottom:solid 1px #c0c0c0; margin:15px 0; padding-bottom:5px;}
+/******COMMON ELEMENTS***************/
+#page-content ul{font-size:14px; line-height:19px; color:#627681; margin-left:40px; list-style-type:none; margin-top:15px; margin-bottom:15px;}
+#page-content ul li{}
+#page-content ul li a{}
+#page-content ul.bullets{list-style-type:disc;}
+#page-content ol{font-size:14px; line-height:19px; color:#627681; margin-left:40px; list-style-type:decimal; margin-top:15px; margin-bottom:15px;}
+/******SCHOOL REFUNDS***************/
+h1.imgTitle{padding-top:55px; margin-bottom:0 !important; margin-right:20px;}
+h2.imgTitle{padding-top: 75px; width:120px;}
+div.get-started-btn{width:226px; height:53px; background:url("images/btn-get-started.png") no-repeat; margin:0 auto;} 
+.educatecard #page-content p.sep{ padding-bottom:15px; margin-bottom:30px; border-bottom:dashed 1px #c0c0c0;}
+.educatecard #page-content ul li.title{font-weight:bold; color:#006D9F;}
+.educatecard #page-content ul li.no-deco{list-style-type:none;}
+.educatecard #page-content ul li p{font-weight:normal; margin-left:15px;}
+.educatecard #page-content ul li h3{color:#006D9F; margin-top:25px; margin-bottom:0;}
+.educatecard #page-content ul li ul{}
+.educatecard #page-content ul li ul li{font-weight:normal; color:#6e7b81; list-style-type:circle; margin:10px 0px;}
+
+/******************************************************************
+FOOTER
+******************************************************************/
+footer{clear:both; height:150px; width:100%; background-color:#001c40; overflow:hidden; border-top:solid 1px #7e8d9f; font-family:Myriad Pro, Arial;}
+footer .left .cell{float:left; display:inline; overflow:hidden; color:#c5ddf2; border-right:dotted 1px #c5ddf2; margin-top:20px; height:120px; margin-right:15px; padding-right:30px;}
+footer .left .cell p,footer .left .cell h4,footer .left .cell li,footer .left .cell li a{color:#c5ddf2;}
+footer .left h4{font-size:15px; font-weight:normal; margin-top:5px;}
+footer .left .phone{background:#001c40 url("images/cell-icon.png") no-repeat 3px 15px; padding:0px 20px 0px 34px;}
+footer .left .phone span.phonenumber{font-size:18px; font-weight:bold;}
+footer .left .phone p{line-height:18px;}
+footer .left .cell li{font-family:Myriad Pro, Arial; font-size:14px;}
+footer .left .cell li a{text-decoration:none;}
+footer .left .cell li a:hover{text-decoration:underline;}
+footer .right img{clear:right; float:right; margin-top:10px;}
+
+/******************************************************************
+LEGAL
+******************************************************************/
+.legal,.footnotes{width:940px; margin:15px auto; clear:both;}
+.legal p,#page-content .legal p{font-family: arial; font-size: 11px;}
+.footnotes p{font-size:9px; font-family:arial; margin-bottom:15px;}
+sup{margin:0 1px; vertical-align:top;}
+sup a{text-decoration:none;}
+sup.sm{font-size:9px;}
+span.policy-links{clear:right; float:right; margin-top:25px;}
+span.policy-links a{font-size:12px; margin-left:10px;}
+html.ie6 sup,html.ie6 sub {height: 0;line-height: 1;vertical-align: baseline;_vertical-align: bottom;position: relative;	}
+html.ie6 sup {bottom: 1ex;}
+html.ie6 sub {top: .5ex;}
+
+/******************************************************************
+MISC
+******************************************************************/
+a.fill{width:100%; height:100%; display:block; cursor:pointer;}
+ul.bullets li{list-style-type:disc; list-style-position:inside;}
+.no-border{border:none !important;}
+.right-align{width:100%; text-align:right;}
+.note{font-size:12px !important; font-style:italic;}
+.clear{clear:both; width:100%;}
